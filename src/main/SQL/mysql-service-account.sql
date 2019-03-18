@@ -6,9 +6,9 @@ GRANT DELETE ON springguru.* to 'springframework'@'localhost';
 GRANT UPDATE ON springguru.* to 'springframework'@'localhost';
 
 
-CREATE USER 'qa2user'@'localhost' IDENTIFIED BY 'qa2password';
+CREATE USER 'spring_guru_owner'@'%' IDENTIFIED BY 'GuruPassword';
 
-GRANT SELECT ON qa2.* to 'qa2user'@'localhost';
-GRANT INSERT ON qa2.* to 'qa2user'@'localhost';
-GRANT DELETE ON qa2.* to 'qa2user'@'localhost';
-GRANT UPDATE ON qa2.* to 'qa2user'@'localhost';
+GRANT SELECT ON springguru.* to 'spring_guru_owner'@'%';
+GRANT INSERT ON springguru.* to 'spring_guru_owner'@'%';
+GRANT DELETE ON springguru.* to 'spring_guru_owner'@'%';
+GRANT UPDATE ON springguru.* to 'spring_guru_owner'@'%';
